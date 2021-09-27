@@ -17,7 +17,7 @@ const FormSignUp = () => {
           <div className="form-floating mb-3">
             <input
               type="text"
-              className="form-control"
+              className={`form-control ${errors.fullName && "is-invalid"}`}
               name="fullName"
               id="fullName"
               placeholder="Full Name"
@@ -34,7 +34,7 @@ const FormSignUp = () => {
           <div className="form-floating mb-3">
             <input
               type="email"
-              className="form-control"
+              className={`form-control ${errors.email && "is-invalid"}`}
               name="email"
               id="email"
               placeholder="name@example.com"
@@ -51,7 +51,7 @@ const FormSignUp = () => {
           <div className="form-floating mb-3">
             <input
               type="password"
-              className="form-control"
+              className={`form-control ${errors.password && "is-invalid"}`}
               placeholder="Password"
               id="password"
               name="password"
@@ -68,7 +68,9 @@ const FormSignUp = () => {
           <div className="form-floating">
             <input
               type="password"
-              className="form-control"
+              className={`form-control ${
+                errors.confirm_password && "is-invalid"
+              }`}
               placeholder="Confirm Password"
               id="confirm_password"
               name="confirm_password"
