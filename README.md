@@ -2,4 +2,4 @@
 
 ## project screenshort
 
-<img src="./src/project_image.png" />
+<img src="./src/projectImage.png" />
